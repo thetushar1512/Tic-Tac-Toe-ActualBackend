@@ -56,8 +56,10 @@ io.on("connection", (socket) => {
     }
   });
 });
-
-const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-  console.log("Server running is running on port "+ PORT);
+app.get("/",(req,res)=>{
+  console.log("Hello i am live");
+});
+const Port = process.env.PORT || 5000;
+server.listen(port, () => {
+  console.log("Server running is running on port "+ port);
 });
